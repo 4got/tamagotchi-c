@@ -5,25 +5,19 @@
 int main()
 {
 
-  struct character ac1;
+  struct beast ac1;
   //предоставление выбора
 
-  printf("Hello, how do you wish to call me?");
+  printf("Hello, how do you wish to call me?\n");
   scanf(ac1.name);
   getchar();
 
-  printf("Thank you. What kind of beast am I?\n1 - a bird\n2 - crocodile\n3 - zebra\n4 - cyclope\n5 - tiger\n");
-  scanf("%d", &ac1.beast);
+  printf("Thank you. What kind of beast am I?\n1 - a bird\n2 - a crocodile\n3 - a zebra\n4 - a cyclope\n5 - a tiger\n");
+  scanf("%d", &ac1.id);
   getchar();
+  default_beasts(&ac1);
   printf("So I am %s", ac1.name);
-  switch (ac1.beast)
-  {
-  case 1:
-    /* code */
-    break;
+  getchar();
 
-  default:
-    break;
-  }
   return 0;
 }

@@ -1,6 +1,8 @@
+#include <structs.h>
 //functions
 
-//born
+//create
+void default_beasts(beast *bsts);
 
 //eat
 
